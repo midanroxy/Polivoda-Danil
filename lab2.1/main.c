@@ -19,10 +19,10 @@ int main()
         return -1;
     }
 
-    double a = x, S = a;
+    double a = 1, S = a;
 
     for (int n = 0; n <= N; ++n) {
-        double q = - x/(2*n+1)*(2*n+2);
+        double q = - x/(2*(n+1)*(2*n+1));
         a *= q;
         S += a;
     }
